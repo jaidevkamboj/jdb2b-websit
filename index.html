@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDB2B | Business Solutions Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo" onclick="showPage('home')">
+                <i class="fas fa-code-branch logo-icon"></i>
+                JD<span>B2B</span>
+            </a>
+            
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a class="nav-link active" onclick="showPage('home')">Home</a></li>
+                <li><a class="nav-link" onclick="showPage('about')">About</a></li>
+                <li><a class="nav-link" onclick="showPage('services')">Services</a></li>
+                <li><a class="nav-link" onclick="showPage('contact')">Contact</a></li>
+                <li><a class="btn btn-outline" onclick="showPage('contact')">Get Started</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Transform Your Business with Strategic B2B Solutions</h1>
+                <p>We connect enterprises with innovative tools, services, and partners to drive growth and digital transformation in today's competitive landscape.</p>
+                <div class="hero-buttons">
+                    <a class="btn" onclick="showPage('contact')">
+                        <i class="fas fa-rocket"></i> Get Started
+                    </a>
+                    <a class="btn btn-outline" onclick="showPage('services')">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number" id="stat1">0</span>
+                        <span class="stat-label">Businesses Connected</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="stat2">0</span>
+                        <span class="stat-label">Partnerships Formed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="stat3">0</span>
+                        <span class="stat-label">Global Locations</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="stat4">0</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose <span>JDB2B</span></h2>
+                <p class="section-subtitle">Our platform is designed to address the unique challenges of B2B relationships and digital transformation</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Seamless Integration</h3>
+                        <p>Connect your existing systems with our platform through powerful APIs and integration tools.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Enterprise Security</h3>
+                        <p>Bank-level security protocols to keep your data and transactions safe from threats.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Data Analytics</h3>
+                        <p>Gain valuable insights from your business relationships and transactions with our analytics tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our <span>Clients Say</span></h2>
+                <p class="section-subtitle">Hear from businesses that have transformed their operations with our platform</p>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"JDB2B transformed our supplier network, helping us reduce costs by 23% while improving quality and delivery times. Their platform is intuitive and powerful."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JD</div>
+                            <div class="author-info">
+                                <h4>John Davidson</h4>
+                                <p>Procurement Manager, TechManufacture Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"The partnerships facilitated through JDB2B have been instrumental in our expansion into three new international markets. Their matchmaking algorithm is impressive."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SR</div>
+                            <div class="author-info">
+                                <h4>Sarah Reynolds</h4>
+                                <p>Director, Global Tech Innovations</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Their strategic approach to business connectivity helped us find the perfect technology partner for our digital transformation. The ROI was evident within the first quarter."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MJ</div>
+                            <div class="author-info">
+                                <h4>Amit Kumar</h4>
+                                <p>CTO, Financial Services Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Transform Your Business Relationships?</h2>
+                <p>Join thousands of forward-thinking businesses that have accelerated their growth through our platform.</p>
+                <a class="btn" onclick="showPage('contact')">
+                    <i class="fas fa-calendar-check"></i> Schedule a Demo
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <section class="about-hero">
+            <div class="container">
+                <h2 class="section-title">About <span>JDB2B</span></h2>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>We're Revolutionizing How Businesses Connect</h2>
+                        <p>Founded in 2012, JDB2B has been at the forefront of B2B digital transformation, helping businesses of all sizes find the right partners, suppliers, and clients to drive growth and innovation.</p>
+                        <p>Our platform uses advanced AI algorithms and industry expertise to create meaningful connections that result in long-term business relationships and mutual success. We believe that the future of business is connected, and we're here to build those bridges.</p>
+                        <a class="btn" onclick="showPage('contact')">
+                            <i class="fas fa-handshake"></i> Partner With Us
+                        </a>
+                    </div>
+                    
+                    <div class="about-image">
+                        <div class="about-image-placeholder">
+                            <i class="fas fa-image"></i> About Us Visual
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Values Section -->
+        <section class="values">
+            <div class="container">
+                <h2 class="section-title">Our <span>Core Values</span></h2>
+                <p class="section-subtitle">These principles guide everything we do at JDB2B</p>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>We constantly push boundaries to develop cutting-edge solutions that address tomorrow's business challenges today.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Partnership</h3>
+                        <p>We view our clients as partners and are committed to their success through collaboration and shared goals.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Integrity</h3>
+                        <p>We operate with transparency and honesty, building trust through ethical business practices and data protection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="team">
+            <div class="container">
+                <h2 class="section-title">Our <span>Leadership Team</span></h2>
+                <p class="section-subtitle">Meet the visionaries driving NexusB2B forward</p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="member-name">Robert Johnson</h3>
+                        <p class="member-role">CEO & Founder</p>
+                        <p>20+ years of experience in business development and strategic partnerships.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="member-name">Sarah Williams</h3>
+                        <p class="member-role">Chief Operations Officer</p>
+                        <p>Expert in operational efficiency and process optimization for B2B organizations.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="member-name">Michael Chen</h3>
+                        <p class="member-role">CTO</p>
+                        <p>Leads our technology initiatives with a focus on AI-driven matchmaking algorithms.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="member-name">Emily Rodriguez</h3>
+                        <p class="member-role">VP of Partnerships</p>
+                        <p>Builds and maintains strategic relationships with our enterprise clients.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Services Page -->
+    <div id="services" class="page">
+        <section class="services-hero">
+            <div class="container">
+                <h1>Our B2B Solutions & Services</h1>
+                <p>Comprehensive services designed to address your business challenges and drive growth.</p>
+            </div>
+        </section>
+        
+        <section class="services">
+            <div class="container">
+                <h2 class="section-title">Our <span>Services</span></h2>
+                <p class="section-subtitle">Tailored solutions for businesses of all sizes across various industries</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search-dollar"></i>
+                        </div>
+                        <h3>Strategic Matchmaking</h3>
+                        <p>We identify and connect you with ideal business partners based on your specific needs, goals, and compatibility factors.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>AI-powered partner matching</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Compatibility scoring</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Industry-specific criteria</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Business Consulting</h3>
+                        <p>Our experts provide guidance on market expansion, partnership strategies, and operational improvements.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Market analysis</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Growth strategy development</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Operational efficiency audit</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Network Development</h3>
+                        <p>Access our extensive global network of vetted businesses across various industries and regions.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Global partner database</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Industry-specific networking events</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Exclusive partnership opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Partnership Management</h3>
+                        <p>We help you establish and maintain successful long-term business relationships with your partners.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Relationship health monitoring</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Performance tracking</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Conflict resolution support</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Market Analysis</h3>
+                        <p>Comprehensive research and insights into industry trends, potential partners, and market opportunities.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Competitive intelligence</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Market trend analysis</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Opportunity identification</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>Custom Solutions</h3>
+                        <p>Tailored services designed to address your unique business challenges and objectives.</p>
+                        <div class="service-features">
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Bespoke platform development</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Custom integration solutions</span>
+                            </div>
+                            <div class="service-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Personalized reporting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Section -->
+        <section class="pricing">
+            <div class="container">
+                <h2 class="section-title">Flexible <span>Pricing Plans</span></h2>
+                <p class="section-subtitle">Choose the plan that works best for your business needs</p>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Starter</h3>
+                            <div class="pricing-price">$99<span>/month</span></div>
+                            <p>For small businesses getting started</p>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Up to 50 connections</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Basic matchmaking</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Email support</span>
+                            </div>
+                            <div class="pricing-feature disabled">
+                                <i class="fas fa-times-circle"></i>
+                                <span>Advanced analytics</span>
+                            </div>
+                            <div class="pricing-feature disabled">
+                                <i class="fas fa-times-circle"></i>
+                                <span>Custom integrations</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-outline" onclick="showPage('contact')">Get Started</a>
+                    </div>
+                    
+                    <div class="pricing-card popular">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Professional</h3>
+                            <div class="pricing-price">$299<span>/month</span></div>
+                            <p>For growing businesses</p>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Up to 500 connections</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Advanced matchmaking</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Priority support</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Basic analytics</span>
+                            </div>
+                            <div class="pricing-feature disabled">
+                                <i class="fas fa-times-circle"></i>
+                                <span>Custom integrations</span>
+                            </div>
+                        </div>
+                        <a class="btn" onclick="showPage('contact')">Get Started</a>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Enterprise</h3>
+                            <div class="pricing-price">Custom<span>/quote</span></div>
+                            <p>For large organizations</p>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Unlimited connections</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>AI-powered matchmaking</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>24/7 dedicated support</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Advanced analytics</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Custom integrations</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-outline" onclick="showPage('contact')">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <section class="contact-hero">
+            <div class="container">
+                <h2 class="section-title">Contact <span>Us</span></h2>
+                <p>Get in touch with our team to discuss how we can help your business</p>
+            </div>
+        </section>
+        
+        <section class="contact">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Visit Us</h3>
+                                <p>123 Business Avenue, Suite 500<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Call Us</h3>
+                                <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email Us</h3>
+                                <p>info@JDb2b.com<br>support@nexusb2b.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" placeholder="Your Company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service">
+                                <option value="">Select a service</option>
+                                <option value="matchmaking">Strategic Matchmaking</option>
+                                <option value="consulting">Business Consulting</option>
+                                <option value="network">Network Development</option>
+                                <option value="management">Partnership Management</option>
+                                <option value="analysis">Market Analysis</option>
+                                <option value="custom">Custom Solutions</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <h2 class="section-title">Frequently <span>Asked Questions</span></h2>
+                <p class="section-subtitle">Find answers to common questions about our platform and services</p>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How does the matchmaking process work?
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our matchmaking process uses a proprietary algorithm that analyzes your business needs, industry, size, and goals to identify compatible partners. We combine AI technology with human expertise to ensure quality matches.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How long does it take to see results?
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Most clients begin seeing potential matches within the first week of using our platform. The timeline for establishing partnerships varies based on your industry and specific requirements, but we typically facilitate initial connections within 2-3 weeks.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Is my data secure with your platform?
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we take data security extremely seriously. Our platform uses enterprise-grade encryption, regular security audits, and compliance with industry standards including GDPR and CCPA. We never share your confidential information without explicit permission.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Can I integrate with my existing CRM?
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer integrations with popular CRM platforms including Salesforce, HubSpot, and Microsoft Dynamics. Custom integrations are also available for enterprise clients with proprietary systems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What industries do you serve?
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We serve a wide range of industries including technology, manufacturing, healthcare, financial services, retail, and professional services. Our platform is designed to be adaptable to various business models and partnership types.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>JDB2B</h3>
+                    <p>Connecting businesses for growth and innovation since 2012. Our platform helps companies find the right partners, suppliers, and solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a onclick="showPage('home')"><i class="fas fa-chevron-right"></i> Home</a>
+                        <a onclick="showPage('about')"><i class="fas fa-chevron-right"></i> About Us</a>
+                        <a onclick="showPage('services')"><i class="fas fa-chevron-right"></i> Services</a>
+                        <a onclick="showPage('contact')"><i class="fas fa-chevron-right"></i> Contact</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Blog</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <div class="footer-links">
+                        <a href="#"><i class="fas fa-chevron-right"></i> Case Studies</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Whitepapers</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Webinars</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> FAQ</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Documentation</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and industry insights.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 JDsB2B. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js">
+        
+    </script>
+</body>
+</html>
